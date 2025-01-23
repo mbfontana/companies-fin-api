@@ -20,6 +20,7 @@ module.exports = {
       ticker: {
         type: Sequelize.DataTypes.STRING,
         allowNull: false,
+        unique: true,
       },
       exchange: {
         type: Sequelize.DataTypes.STRING,

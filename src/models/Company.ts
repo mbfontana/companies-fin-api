@@ -35,6 +35,7 @@ const Company = sequelize.define<CompanyInstance>("companies", {
   ticker: {
     type: DataTypes.STRING,
     allowNull: false,
+    unique: true,
   },
   exchange: {
     type: DataTypes.STRING,
